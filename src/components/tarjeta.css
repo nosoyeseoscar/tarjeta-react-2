@@ -1,0 +1,62 @@
+.tarjeta {
+    width: 300px;
+    background: #fff;
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+    margin: 10px;
+    border-radius: 10px; 
+    position: relative; 
+    border: 2px solid #fff;
+}
+
+.tarjeta:hover{
+    border: 2px solid #213f8f;
+}
+
+.tarjeta:hover .cuerpoTarjeta.activa {
+    border: 2px solid #213f8f;
+    left: -2px;
+}
+
+.cabeceraTarjeta{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    justify-content: flex-end;
+    /* align-items: center; */
+    height: 110px;    
+}
+
+.cuerpoTarjeta {
+    transition: .2s ease all;
+    border: 2px solid #fff;
+    display: none;
+    width: 100%;
+    border-top: 2px solid #ccc;
+    background: #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius:  10px;
+}
+
+.cuerpoTarjeta.activa {
+    display: flex;  
+    position: absolute;
+    top:115px;
+    left:-2px;
+    z-index: 100;
+    animation: fadeIn .3s forwards;      
+}
+
+@keyframes fadeIn {
+    from {
+      transform: translateY(-70px) scale(.5);
+    }
+    to {
+      transform: translateY(0) scale(1);
+    }
+  }
+
+.flechita{
+    color: #213f8f;
+    /* cursor: pointer; */
+}

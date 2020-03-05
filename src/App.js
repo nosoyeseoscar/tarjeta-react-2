@@ -1,25 +1,56 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Tarjeta from './components/tarjeta';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className="contenedor">
+        <Tarjeta 
+          titulo="Soy un Título Largo, muy Largoooo" 
+          desc="Soy una descripción muy larga: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Explicabo laborum suscipit commodi laboriosam, quasi provident molestias corporis minima quis 
+          aspernatur repellat nobis, dolore quod voluptate distinctio maiores nisi, optio eligendi?" 
         >
-          Learn React
-        </a>
-      </header>
+        </Tarjeta>
+        <Tarjeta 
+          titulo="Soy un Título  2" 
+          desc="Soy una descripción muy larga: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Explicabo laborum suscipit commodi laboriosam, quasi provident molestias corporis minima quis 
+          aspernatur repellat nobis, dolore quod voluptate distinctio maiores nisi, optio eligendi?" 
+        >
+        </Tarjeta>
+        <Tarjeta 
+          titulo="Soy un Título Largo, muy Largoooo 2" 
+          desc="Soy una descripción muy larga: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Explicabo laborum suscipit commodi laboriosam, quasi provident molestias corporis minima quis 
+          aspernatur repellat nobis, dolore quod voluptate distinctio maiores nisi, optio eligendi?" 
+        >
+        </Tarjeta>
+        <Tarjeta 
+          titulo="Título" 
+          desc="Soy una descripción muy larga: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Explicabo laborum suscipit commodi laboriosam, quasi provident molestias corporis minima quis 
+          aspernatur repellat nobis, dolore quod voluptate distinctio maiores nisi, optio eligendi?" 
+        >
+        </Tarjeta>
+        <Tarjeta 
+          titulo="Soy un Título Largo, muy Largoooo 2" 
+          desc="Soy una descripción muy larga: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Explicabo laborum suscipit commodi laboriosam, quasi provident molestias corporis minima quis 
+          aspernatur repellat nobis, dolore quod voluptate distinctio maiores nisi, optio eligendi?" 
+        >
+        </Tarjeta>
+        <Tarjeta 
+          titulo="Soy un Título Largo, muy Largoooo 2" 
+          desc="Soy una descripción muy larga: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Explicabo laborum suscipit commodi laboriosam, quasi provident molestias corporis minima quis 
+          aspernatur repellat nobis, dolore quod voluptate distinctio maiores nisi, optio eligendi?" 
+        >
+        </Tarjeta>
+      </div>      
     </div>
+
   );
 }
 
